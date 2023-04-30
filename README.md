@@ -1,5 +1,7 @@
 # dredge-cheats-terminal
-A mod which enables the debug cheats terminal in Dredge
+A mod which enables the debug cheats terminal in Dredge.
+
+IMPORTANT: After using the terminal you might find your controls are locked. Press down the middle mouse button to regain control.
 
 ![debugconsole](https://user-images.githubusercontent.com/22628069/235367741-b1b6b1f2-ab89-4ddf-944a-172137f88fc9.png)
 
