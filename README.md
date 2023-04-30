@@ -53,7 +53,7 @@ If you run BepInEx with the console configured to be open you can see a list of 
 - tp
 - demo.end
 - func.addmarker
-- fun.showmarker
+- func.showmarker
 - money.add
 - item.add
 - item.addstore
