@@ -1,9 +1,10 @@
 ﻿using BepInEx;
+using CommandTerminal;
 using HarmonyLib;
 using System;
+using System.Linq;
 using System.Reflection;
 using UnityEngine;
-using CommandTerminal;
 
 namespace DredgeCheatsTerminal
 {
@@ -15,6 +16,14 @@ namespace DredgeCheatsTerminal
 		public static Plugin Instance { get; private set; }
 
 		public static GameObject terminal;
+
+		private string[] _forbiddenCommands = new string[]
+		{
+			"func.map",
+			"func.photo",
+			"func.custom",
+			"dlc.own"
+		};
 
 		private void Awake()
 		{
@@ -47,7 +56,7 @@ namespace DredgeCheatsTerminal
 				Instance.MakeTerminal();
 			}
 
-			if (name == "dlc.own")
+			if (Instance._forbiddenCommands.Contains(name))
 			{
 				return false;
 			}
